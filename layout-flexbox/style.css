@@ -1,0 +1,173 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #333;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.header {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.header__bg-image {
+  position: absolute;
+  background: #333 url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.header__wrap {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.header__title {
+  padding-top: 100px;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  font-size: 1.1em;
+  padding: 1em 0;
+  font-weight: normal;
+}
+
+.header__btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+  cursor: pointer;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.section-a,
+.section-c {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+  font-size: 1.1em;
+}
+
+.section-a__wrap {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 45px;
+}
+
+
+.card{
+  background-color: #333;
+}
+
+.card__wrap{
+  max-width: 880px;
+  padding: 2em 1em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__item + .card__item{
+  margin-left: 1em;
+}
+
+.card__item{
+  background-color: #fff;
+  color: #333;
+}
+
+.card__content{
+  padding: 1.5em;
+}
+
+.card__title{
+  padding: 1.5em;
+  font-weight: bold;
+}
+
+
+.section-d {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.contact {
+  background-color: #2690d4;
+  padding: 2em;
+  width: 50%;
+}
+
+.contact__info {
+  padding-bottom: 2em;
+}
+
+.contact__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about {
+  background-color: #333;
+  padding: 2em;
+  width: 50%;
+}
+
+.footer{
+  background-color: #000;
+  color:#fff;
+}
+
+.footer__wrap{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.footer__item{
+  width: 50%;
+  text-align: center;
+  padding: 2em;
+}
