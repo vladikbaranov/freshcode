@@ -48,6 +48,24 @@ body {
   display: block;
   font-size: 2em;
   font-weight: bold;
+  white-space: nowrap;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 150%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
 .header__subtitle {
@@ -67,6 +85,11 @@ body {
   cursor: pointer;
   font-size: 1.1em;
   line-height: 1.5;
+}
+
+.header__btn:hover {
+  background-color: #fff;
+  color: #666;
 }
 
 .container {
@@ -95,12 +118,11 @@ body {
   column-gap: 45px;
 }
 
-
-.card{
+.card {
   background-color: #333;
 }
 
-.card__wrap{
+.card__wrap {
   max-width: 880px;
   padding: 2em 1em;
   margin: 0 auto;
@@ -108,24 +130,23 @@ body {
   justify-content: space-around;
 }
 
-.card__item + .card__item{
+.card__item + .card__item {
   margin-left: 1em;
 }
 
-.card__item{
+.card__item {
   background-color: #fff;
   color: #333;
 }
 
-.card__content{
+.card__content {
   padding: 1.5em;
 }
 
-.card__title{
+.card__title {
   padding: 1.5em;
   font-weight: bold;
 }
-
 
 .section-d {
   width: 100%;
@@ -155,19 +176,56 @@ body {
   width: 50%;
 }
 
-.footer{
+.footer {
   background-color: #000;
-  color:#fff;
+  color: #fff;
 }
 
-.footer__wrap{
+.footer__wrap {
   display: flex;
   justify-content: space-between;
-  
 }
 
-.footer__item{
+.footer__item {
   width: 50%;
   text-align: center;
   padding: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  .header__wrap {
+    max-width: 700px;
+  }
+  .card__wrap {
+    max-width: 400px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .card__item {
+    padding-top: 20px;
+  }
+  .card__item + .card__item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 1rem;
+  }
+  .section-a__wrap,
+  .footer__wrap,
+  .section-d {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footer__item {
+    width: 100%;
+    padding: 0.4em;
+  }
+  .contact,
+  .about {
+    width: 100%;
+  }
 }
