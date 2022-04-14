@@ -5,7 +5,7 @@ const myReduce = (arr, callback, startValue) => {
   let newArr = arr.reverse();
   let result = startValue || [];
   for (let i = 0; i < arr.length; i++) {
-    result = callback(Number(result), Number(arr[i]), i, arr);
+    result = callback(Number(result), (arr[i]), i, arr);
   }
   return result;
 }
