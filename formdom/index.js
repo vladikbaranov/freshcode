@@ -1,0 +1,135 @@
+let container = document.getElementById('container');
+let header = document.createElement('div');
+let logo = document.createElement('img');
+let headerBtn = document.createElement('button');
+let wrapper = document.createElement('div');
+let title = document.createElement('h1');
+let subtitle = document.createElement('h3');
+let form = document.createElement('form');
+let ul = document.createElement('ul');
+let li1 = document.createElement('li');
+let li2 = document.createElement('li');
+let li3 = document.createElement('li');
+let li4 = document.createElement('li');
+let li5 = document.createElement('li');
+let li6 = document.createElement('li');
+let inputFirName = document.createElement('input');
+let inputSecName = document.createElement('input');
+let inputDisName = document.createElement('input');
+let inputEmail = document.createElement('input');
+let inputPassword = document.createElement('input');
+let inputPassConf = document.createElement('input');
+let radioWrap1 = document.createElement('div');
+let radioWrap2 = document.createElement('div');
+let inputRadio1 = document.createElement('input');
+let inputRadio2 = document.createElement('input');
+let labelRadio1 = document.createElement('label');
+let labelRadio2 = document.createElement('label');
+let inputCheckbox = document.createElement('input');
+let labelCheckbox = document.createElement('label');
+let formBtn = document.createElement('button');
+
+
+header.className = 'header';
+logo.className = 'logo';
+headerBtn.className = 'headerBtn';
+wrapper.className = 'wrapper';
+title.className = 'title';
+subtitle.className = 'subtitle';
+ul.className = 'ul';
+inputFirName.className = 'input';
+inputSecName.className = 'input';
+inputDisName.className = 'input';
+inputEmail.className = 'input';
+inputPassword.className = 'input';
+inputPassConf.className = 'input';
+radioWrap1.className = 'radioWrap';
+radioWrap2.className = 'radioWrap';
+labelRadio1.className = 'inputRadio';
+labelRadio2.className = 'inputRadio';
+inputCheckbox.className = 'inputCheckbox';
+labelCheckbox.className = 'labelCheckbox';
+formBtn.className = 'formBtn';
+
+
+
+logo.setAttribute('src', 'https://www.squadhelp.com/img/logo.png');
+logo.setAttribute('alt', 'logo-image');
+headerBtn.textContent = 'Login';
+title.textContent = 'CREATE AN ACCOUNT';
+subtitle.textContent = 'We always keep your name and email address private.';
+form.setAttribute('action', '/my-handling-form-page');
+form.setAttribute('method', 'post');
+inputFirName.setAttribute('type', 'text');
+inputFirName.setAttribute('id', 'inputFirName');
+inputFirName.setAttribute('name', 'user_firstName');
+inputFirName.setAttribute('placeholder', 'First Name');
+inputSecName.setAttribute('type', 'text');
+inputSecName.setAttribute('id', 'inputSecName');
+inputSecName.setAttribute('name', 'user_secondName');
+inputSecName.setAttribute('placeholder', 'Second Name');
+inputDisName.setAttribute('type', 'text');
+inputDisName.setAttribute('id', 'inputDisName');
+inputDisName.setAttribute('name', 'user_displayName');
+inputDisName.setAttribute('placeholder', 'Display Name');
+inputEmail.setAttribute('type', 'email');
+inputEmail.setAttribute('id', 'inputEmail');
+inputEmail.setAttribute('name', 'user_mail');
+inputEmail.setAttribute('placeholder', 'Email Adress');
+inputPassword.setAttribute('type', 'password');
+inputPassword.setAttribute('id', 'inputPassword');
+inputPassword.setAttribute('name', 'user_password');
+inputPassword.setAttribute('placeholder', 'Password');
+inputPassConf.setAttribute('type', 'password');
+inputPassConf.setAttribute('id', 'inputPassConf');
+inputPassConf.setAttribute('name', 'user_passConf');
+inputPassConf.setAttribute('placeholder', 'Password Confirmation');
+inputRadio1.setAttribute('type', 'radio');
+inputRadio1.setAttribute('id', 'inputRadio1');
+inputRadio1.setAttribute('name', 'inputRadio');
+labelRadio1.innerHTML = 'Join As a Buyer <span>I am looking for a Name, Logo or Tagline for my business, brand or product.</span>'
+labelRadio1.setAttribute('for', 'inputRadio1')
+inputRadio2.setAttribute('type', 'radio');
+inputRadio2.setAttribute('id', 'inputRadio2');
+inputRadio2.setAttribute('name', 'inputRadio');
+labelRadio2.innerHTML = 'Join As a Creative or Marketplace Seller <span>I plan to submit name ideas, Logo designs or sell names in Domain Marketplace. Join As a Creative or Marketplace Seller </span>'
+labelRadio2.setAttribute('for', 'inputRadio2');
+inputCheckbox.setAttribute('type', 'checkbox');
+inputCheckbox.setAttribute('id', 'inputCheckbox');
+inputCheckbox.setAttribute('name', 'inputCheckbox');
+labelCheckbox.setAttribute('for', 'inputCheckbox');
+labelCheckbox.textContent = 'Allow Squadhelp to send marketing/promotional offers from time to time';
+formBtn.textContent = 'Create account';
+
+
+
+
+container.appendChild(header);
+container.appendChild(wrapper);
+header.appendChild(logo);
+header.appendChild(headerBtn);
+wrapper.appendChild(title);
+wrapper.appendChild(subtitle);
+wrapper.appendChild(form);
+form.appendChild(ul);
+form.appendChild(radioWrap1);
+form.appendChild(radioWrap2);
+form.appendChild(inputCheckbox);
+form.appendChild(labelCheckbox);
+form.appendChild(formBtn);
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
+ul.appendChild(li4);
+ul.appendChild(li5);
+ul.appendChild(li6);
+li1.append(inputFirName);
+li2.append(inputSecName);
+li3.append(inputDisName);
+li4.append(inputEmail);
+li5.append(inputPassword);
+li6.append(inputPassConf);
+radioWrap1.appendChild(inputRadio1);
+radioWrap1.appendChild(labelRadio1);
+radioWrap2.appendChild(inputRadio2);
+radioWrap2.appendChild(labelRadio2);
