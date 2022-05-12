@@ -161,7 +161,7 @@ inputSecName.addEventListener('focusin', () => {
   inputSecName.classList.remove('inputErr');
 });
 
-inputEmail.addEventListener('focusout', (e) => {
+inputEmail.addEventListener('focusout', (e) => { 
   let val = e.target.value;
   if (!val) {
     inputDisName.parentNode.appendChild(textErr);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency conversion</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">
+        Курс валют Приватбанка
+        <span id="headerSpan"></span>
+      </h1>
+      <form id="conversion">
+        <div class="radioWrapper">
+          <label
+            ><input type="radio" id="radioInUsd" class="radioIn" name="radioIn" value='USD'checked />USD
+          </label>
+          <label><input type="radio" id="radioInEu" class="radioIn" name="radioIn" value='EUR'/>EUR </label>
+          <label><input type="radio" id="radioInBtc" class="radioIn" name="radioIn" value='BTC' />BTC </label>
+          <label><input type="radio" id="radioInUa" class="radioIn" name="radioIn" value='UA' />UA </label>
+        </div>
+
+        <div class="inputWrap">
+          <input type="text" id="inputIn" class="inputText"/>
+          <label for="inputIn" id="labelIn" class="label"></label>
+       </div>
+
+        <div class="equals" id="equals">=</div>
+    
+        <div class="inputWrap">
+         <input type="text" id="inputOut" class="inputText" readonly />
+         <label for="inputOut" id="labelOut" class="label"></label>
+        </div>
+
+      <div class="radioWrapper">
+        <label><input type="radio" id="radioOutUsd" class="radioOut" name="radioOut" value='USD'/>USD </label>
+        <label><input type="radio" id="radioOutEu" class="radioOut" name="radioOut" value='EUR' checked />EUR</label>
+        <label><input type="radio" id="radioOutBtc" class="radioOut" name="radioOut" value='BTC' />BTC </label>
+        <label><input type="radio" id="radiOutUa" class="radioOut" name="radioOut" value='UA' />UA </label>
+      </div>
+    </div>
+  </form>
+    <script src="index.js"></script>
+  </body>
+</html>
